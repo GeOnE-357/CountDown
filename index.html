@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Countdown</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" type="text/css" href="estilo.css">	
+</head>
+<body class="relative w-full h-screen m-0 bg-gradient-to-b from-mostlyBlackBlue to-veryDarkBlue
+    font-redHatText">
+  <section class="w-full h-full flex flex-col justify-center items-center">
+    <div class="text-xl text-center tracking-[8px] md:text-4xl text-grayishBlue md:tracking-[14px] font-bold">
+      LAS E.C. LLEGARÁN EN
+    </div>
+    <!--Time-->
+    <div class="mt-[10px] flex justify-center items-center gap-[30px]">
+      <!--DIAS-->
+      <div class="flex flex-col-reverse justify-center items-center space-y-5">
+        <h1 class="mt-[20px] text-2xl text-grayishBlue font-bold">
+          DIAS
+        </h1>
+        <div class="flex justify-center items-center">
+          <div class="flex flex-col text-softRed space-y-[1px] rounded-xl container-shadow" data-days>
+            <!--Top-->
+            <span class="relative w-[120px] h-[60px] bg-slightlyDarkerDesBlue overflow-hidden
+                         rounded-tl-xl rounded-tr-xl flex justify-center items-end text-6xl">
+              <div class="absolute w-full h-full flex justify-start items-end">
+                <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
+              </div>
+              <div class="absolute w-full h-full flex justify-end items-end">
+                <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
+              </div>
+              <span class="translate-y-[31px]" data-card-top>
+                09
+              </span>
+              <!--FlipTop-->
+              <span class="absolute w-[120px] h-[60px] bg-slightlyDarkerDesBlue overflow-hidden
+                             rounded-tl-xl rounded-tr-xl flex justify-center items-end text-6xl top-flip-shadow" data-flip-top>
+                <div class="absolute w-full h-full flex justify-start items-end">
+                  <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
+                </div>
+                <div class="absolute w-full h-full flex justify-end items-end">
+                  <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
+                </div>
+                <span class="translate-y-[31px]" data-flip-top-num data-card-top>
+                  00
+                </span>
+              </span>
+            </span>
+            <!--Bottom-->
+            <span class="relative w-[120px] h-[60px] bg-darkDesaturatedBlue overflow-hidden 
+                        rounded-bl-xl rounded-br-xl flex justify-center items-end text-6xl bottom-flip-shadow">
+              <div class="absolute w-full h-full flex justify-start items-start">
+                <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
+              </div>
+              <div class="absolute w-full h-full flex justify-end items-start">
+                <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
+              </div>
+              <span class="-translate-y-[30px]" data-card-bot>00</span>
+              <!--FlipBottom-->
+              <span class="absolute w-[120px] h-[60px] bg-darkDesaturatedBlue overflow-hidden 
+                            rounded-bl-xl rounded-br-xl flex justify-center items-end text-6xl bottom-flip-shadow" data-flip-bot>
+                <div class="absolute w-full h-full flex justify-start items-start">
+                  <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
+                </div>
+                <div class="absolute w-full h-full flex justify-end items-start">
+                  <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
+                </div>
+                <span class="-translate-y-[30px]" data-flip-bot-num>00</span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-[10px] flex justify-center items-center gap-[30px]">
+      <!--HORAS-->
+      <div class="flex flex-col-reverse justify-center items-center space-y-5">
+        <h1 class="mt-[20px] text-2xl text-grayishBlue font-bold">
+          HORAS
+        </h1>
+        <div class="flex justify-center items-center">
+          <div class="flex flex-col text-softRed space-y-[1px] rounded-xl container-shadow" data-hours>
+            <!--Top-->
+            <span class="relative w-[120px] h-[60px] bg-slightlyDarkerDesBlue overflow-hidden
+                         rounded-tl-xl rounded-tr-xl flex justify-center items-end text-6xl">
+              <div class="absolute w-full h-full flex justify-start items-end">
+                <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
+              </div>
+              <div class="absolute w-full h-full flex justify-end items-end">
+                <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
+              </div>
+              <span class="translate-y-[31px]" data-card-top>
+                00
+              </span>
+              <!--FlipTop-->
+              <span class="absolute w-[120px] h-[60px] bg-slightlyDarkerDesBlue overflow-hidden
+                             rounded-tl-xl rounded-tr-xl flex justify-center items-end text-6xl top-flip-shadow" data-flip-top>
+                <div class="absolute w-full h-full flex justify-start items-end">
+                  <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
+                </div>
+                <div class="absolute w-full h-full flex justify-end items-end">
+                  <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
+                </div>
+                <span class="translate-y-[31px]" data-flip-top-num data-card-top>
+                  00
+                </span>
+              </span>
+            </span>
+            <!--Bottom-->
+            <span class="relative w-[120px] h-[60px] bg-darkDesaturatedBlue overflow-hidden 
+                        rounded-bl-xl rounded-br-xl flex justify-center items-end text-6xl bottom-flip-shadow">
+              <div class="absolute w-full h-full flex justify-start items-start">
+                <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
+              </div>
+              <div class="absolute w-full h-full flex justify-end items-start">
+                <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
+              </div>
+              <span class="-translate-y-[30px]" data-card-bot>00</span>
+              <!--FlipBottom-->
+              <span class="absolute w-[120px] h-[60px] bg-darkDesaturatedBlue overflow-hidden 
+                            rounded-bl-xl rounded-br-xl flex justify-center items-end text-6xl bottom-flip-shadow" data-flip-bot>
+                <div class="absolute w-full h-full flex justify-start items-start">
+                  <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
+                </div>
+                <div class="absolute w-full h-full flex justify-end items-start">
+                  <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
+                </div>
+                <span class="-translate-y-[30px]" data-flip-bot-num>00</span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-[10px] flex justify-center items-center gap-[30px]">
+      <!--MINUTOS-->
+      <div class="flex flex-col-reverse justify-center items-center space-y-5">
+        <h1 class="mt-[20px] text-2xl text-grayishBlue font-bold">
+          MINUTOS
+        </h1>
+        <div class="flex justify-center items-center">
+          <div class="flex flex-col text-softRed space-y-[1px] rounded-xl container-shadow" data-minutes>
+            <!--Top-->
+            <span class="relative w-[120px] h-[60px] bg-slightlyDarkerDesBlue overflow-hidden
+                         rounded-tl-xl rounded-tr-xl flex justify-center items-end text-6xl">
+              <div class="absolute w-full h-full flex justify-start items-end">
+                <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
+              </div>
+              <div class="absolute w-full h-full flex justify-end items-end">
+                <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
+              </div>
+              <span class="translate-y-[31px]" data-card-top>
+                00
+              </span>
+              <!--FlipTop-->
+              <span class="absolute w-[120px] h-[60px] bg-slightlyDarkerDesBlue overflow-hidden
+                             rounded-tl-xl rounded-tr-xl flex justify-center items-end text-6xl top-flip-shadow" data-flip-top>
+                <div class="absolute w-full h-full flex justify-start items-end">
+                  <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
+                </div>
+                <div class="absolute w-full h-full flex justify-end items-end">
+                  <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
+                </div>
+                <span class="translate-y-[31px]" data-flip-top-num data-card-top>
+                  00
+                </span>
+              </span>
+            </span>
+            <!--Bottom-->
+            <span class="relative w-[120px] h-[60px] bg-darkDesaturatedBlue overflow-hidden 
+                        rounded-bl-xl rounded-br-xl flex justify-center items-end text-6xl bottom-flip-shadow">
+              <div class="absolute w-full h-full flex justify-start items-start">
+                <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
+              </div>
+              <div class="absolute w-full h-full flex justify-end items-start">
+                <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
+              </div>
+              <span class="-translate-y-[30px]" data-card-bot>00</span>
+              <!--FlipBottom-->
+              <span class="absolute w-[120px] h-[60px] bg-darkDesaturatedBlue overflow-hidden 
+                            rounded-bl-xl rounded-br-xl flex justify-center items-end text-6xl bottom-flip-shadow" data-flip-bot>
+                <div class="absolute w-full h-full flex justify-start items-start">
+                  <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
+                </div>
+                <div class="absolute w-full h-full flex justify-end items-start">
+                  <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
+                </div>
+                <span class="-translate-y-[30px]" data-flip-bot-num>00</span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-[10px] flex justify-center items-center gap-[30px]">
+      <!--SEGUNDOS-->
+      <div class="flex flex-col-reverse justify-center items-center space-y-5">
+        <h1 class="mt-[20px] text-2xl text-grayishBlue font-bold">
+          SEGUNDOS
+        </h1>
+        <div class="flex justify-center items-center">
+          <div class="flex flex-col text-softRed space-y-[1px] rounded-xl container-shadow" data-seconds>
+            <!--Top-->
+            <span class="relative w-[120px] h-[60px] bg-slightlyDarkerDesBlue overflow-hidden
+                         rounded-tl-xl rounded-tr-xl flex justify-center items-end text-6xl">
+              <div class="absolute w-full h-full flex justify-start items-end">
+                <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
+              </div>
+              <div class="absolute w-full h-full flex justify-end items-end">
+                <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
+              </div>
+              <span class="translate-y-[31px]" data-card-top>
+                00
+              </span>
+              <!--FlipTop-->
+              <span class="absolute w-[120px] h-[60px] bg-slightlyDarkerDesBlue overflow-hidden
+                             rounded-tl-xl rounded-tr-xl flex justify-center items-end text-6xl top-flip-shadow">
+                <div class="absolute w-full h-full flex justify-start items-end" data-flip-top>
+                  <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
+                </div>
+                <div class="absolute w-full h-full flex justify-end items-end">
+                  <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
+                </div>
+                <span class="translate-y-[31px]" data-flip-top-num data-card-top>
+                  00
+                </span>
+              </span>
+            </span>
+            <!--Bottom-->
+            <span class="relative w-[120px] h-[60px] bg-darkDesaturatedBlue overflow-hidden 
+                        rounded-bl-xl rounded-br-xl flex justify-center items-end text-6xl bottom-flip-shadow">
+              <div class="absolute w-full h-full flex justify-start items-start">
+                <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
+              </div>
+              <div class="absolute w-full h-full flex justify-end items-start">
+                <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
+              </div>
+              <span class="-translate-y-[30px]" data-card-bot>00</span>
+              <!--FlipBottom-->
+              <span class="absolute w-[120px] h-[60px] bg-darkDesaturatedBlue overflow-hidden 
+                            rounded-bl-xl rounded-br-xl flex justify-center items-end text-6xl bottom-flip-shadow" data-flip-bot>
+                <div class="absolute w-full h-full flex justify-start items-start">
+                  <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
+                </div>
+                <div class="absolute w-full h-full flex justify-end items-start">
+                  <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
+                </div>
+                <span class="-translate-y-[30px]" data-flip-bot-num>00</span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="accion.js"></script>
+</body>
+</html>
