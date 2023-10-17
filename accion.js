@@ -18,8 +18,8 @@ function flipAllcard(time) {
 
   flip(document.querySelector("[data-days]"), days, true);
   flip(document.querySelector("[data-hours]"), hours);
-  flip(document.querySelector("[data-minutes]"), minutes);
-  flip(document.querySelector("[data-seconds]"), seconds);
+  //flip(document.querySelector("[data-minutes]"), minutes);
+  //flip(document.querySelector("[data-seconds]"), seconds);
 }
 
 
