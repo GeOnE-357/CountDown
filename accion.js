@@ -5,8 +5,9 @@ const countToDate = new Date("November 13, 2023 07:45:00");
 setInterval(() => {
   const currentDate = new Date();
   const timeBetweenDates = Math.ceil((countToDate - currentDate) / 1000);
+  console.log(timeBetweenDates);
   flipAllcard(timeBetweenDates);
-}, 250);
+}, 36000);
 
 
 /*Populate the cards with the data coming from the Declared Time*/
