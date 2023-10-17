@@ -7,7 +7,7 @@ setInterval(() => {
   const timeBetweenDates = Math.ceil((countToDate - currentDate) / 1000);
   console.log(timeBetweenDates);
   flipAllcard(timeBetweenDates);
-}, 36000);
+}, 250);
 
 
 /*Populate the cards with the data coming from the Declared Time*/
