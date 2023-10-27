@@ -1,5 +1,5 @@
 /*Declare time*/
-const countToDate = new Date("November 13, 2023 07:45:00");
+const countToDate = new Date("November 7, 2023 07:45:00");
 
 /*Calculate time from current date compared to the Declared time*/
 setInterval(() => {
